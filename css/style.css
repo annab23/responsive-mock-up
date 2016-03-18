@@ -26,14 +26,10 @@ p {
 button:hover{
     cursor: pointer;
 }
-/*ul.menu.top li a:active, ul.menu.top li a:visited, ul.menu.top li a:focus, ul.menu.top li a:hover{
-    color: #dc0909;
-}*/
-/* HEADER */
+
+/** HEADER **/
 header {
     height: auto;
-    /*  background: url(../images/banner.jpg) no-repeat center center;
-      background-size: cover;*/
     color: #fff;
 }
 
@@ -131,8 +127,8 @@ header .info button {
 header .info button:hover {
     box-shadow: inset 0 0 7px 0 #fff;
 }
-/* Start Main Content */
-/** latest products **/
+/** Start Main Content */
+/* latest products */
 .block-title {
     margin: 55px 0;
 }
