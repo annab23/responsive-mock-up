@@ -74,9 +74,6 @@ ul.menu.top li a{
     color: #fff;
     text-decoration: none;
 }
-header .owl-theme .owl-controls {
-    margin-top: -40px;
-}
 header .owl-item {
     position: relative;
 }
@@ -87,6 +84,15 @@ header .info {
     padding: 0;
     text-align: center;
     text-transform: uppercase;
+}
+header .item img {
+    width: 100%;
+}
+header .owl-theme .owl-controls {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
 }
 header .owl-theme .owl-controls .owl-page span {
     background: #fff;
@@ -108,6 +114,7 @@ header .owl-controls .owl-page.active span {
 .SS_Collect h4 {
     letter-spacing: 9px;
 }
+
 header .info button {
     margin-top: 15px;
     width: 200px;
@@ -220,12 +227,12 @@ figure.product.autumn figcaption, figure.product.spirit figcaption {
     color: #fff;
 }
 /** trending items **/
-#owl-demo .item img {
+.trending .item img {
     display: block;
     width: 100%;
     height: auto;
 }
-.owl-controls{
+.trending .owl-controls{
     margin-top: 45px;
     text-align: center;
 }
@@ -479,6 +486,12 @@ footer p span {
     h1 {
         font-size: 36px;
     }
+    h2 {
+        font-size: 52px;
+    }
+    h3 {
+        font-size: 60px;
+    }
     h4 {
         font-size: 20px;
     }
@@ -544,13 +557,13 @@ footer p span {
         content: 'XXL';
     }
 	form.size input#xxl-size + label,
-	form.sizi nput#xxl-size1 + label,
+	form.sizi input#xxl-size1 + label,
 	form.size input#xxl-size2 + label,
 	form.size input#xxl-size3 + label {
 		margin-right: 0;
 	}
-    .owl-controls {
-        margin: 25px 0;
+    .trending .owl-controls {
+        margin: 0 0 15px 0;
     }
 	figure.post button {
 		width: 60%;
@@ -567,10 +580,10 @@ footer p span {
         font-size: 24px;
     }
     h2 {
-        font-size: 22px;
+        font-size: 48px;
     }
     h3 {
-        font-size: 20px;
+        font-size: 50px;
     }
     h4 {
         font-size: 18px;
@@ -645,6 +658,9 @@ footer p span {
         top: -10px;
         -webkit-transform: rotate(-45deg);
     }
+    header .item img {
+        width: 130%;
+    }
     header .info {
         top: 30%;
     }
@@ -668,6 +684,15 @@ footer p span {
     }
     .collect {
         margin-top: 0;
+    }
+    figure.product.autumn figcaption,
+    figure.product.spirit figcaption {
+        top: 10%;
+    }
+    figure.product.autumn figcaption h2,
+    figure.product.spirit figcaption h2 {
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(51,51,51, 0.7);
     }
 	form.size input[type="checkbox"] + label {
         width: 50px;
@@ -710,10 +735,10 @@ footer p span {
 }
 @media all and (max-width: 500px) {
     h1 {
-        font-size: 16px;
+        font-size: 14px;
     }
     h2 {
-       font-size: 20px;
+       font-size: 28px;
     }
     header .owl-item .item .info {
         margin-top: 3%;
@@ -723,6 +748,14 @@ footer p span {
         height: 34px;
         font-size: 14px;
     }
+    .latest-products figure.product figcaption {
+        top: 45%;
+    }
+    figure.product.autumn figcaption,
+    figure.product.spirit figcaption {
+        top: 0;
+        padding: 25px;
+    }
     .owl-theme .owl-controls .owl-page span {
         margin: 5px 17px;
     }
@@ -730,19 +763,22 @@ footer p span {
         margin-top: 20px;
     }
 	header .info button, form.size button, .subscribe input, .subscribe button, figure.post button {
-		width: 80%;
+		padding: 15px;
+        width: 80%;
+        height: auto;
 	}
 }
 @media all and (max-width: 350px) {
-    .info h1 {
-        display: none;
-    }
     .block-title h3 {
         margin: 10px 0;
     }
 	figure.product img {
-		outline: none;
+		outline-offset: -15px;
 	}
+    figure.product.autumn figcaption,
+    figure.product.spirit figcaption {
+        top: 5%;
+    }
 	form.size label {
 		margin-right: 18px;
 	}
