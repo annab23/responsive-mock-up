@@ -676,6 +676,7 @@ footer p span {
     }
 	.block-title h3 {
 		margin:10px 0;
+        font-size: 32px;
 	}
     .latest-products figure.product,
 	.collect figure.product,
